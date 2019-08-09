@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>JavaScript</title>
+    </head>
+    <body>
+        <h1 id="my heading">Simple Heading</h1>
+        <input id=input type= "text"placeholder= "choose a color">
+ <button id="changebtn"> Change Color</button>
+        <script>
+            document.getElementById('changebtn').addEventListener('click', function(){
+                document.getElementById('my heading').style.color = document.getElementById('input').value;
+            })
+        </script>
+    </body>
+</html>
